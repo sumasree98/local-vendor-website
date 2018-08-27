@@ -1,4 +1,101 @@
-p
+body
 {
-	color: blue;
+	background-color:#EEE2DC;
+	margin:0;
+	padding:0;
+}
+ul.header
+{
+    list-style-type: none;
+    /*margin: 1vw;*/
+    padding: 0.5vw;
+    overflow: hidden;
+    background-color: #123C69;
+    position:fixed;
+    top:0;
+    width:100%;
+}
+a.c1
+{
+	float:left;
+    color: #EEE2DC;
+    text-align: center;
+    font-size:1.5vw;
+    text-decoration: none;
+    margin-left:0vw;
+    margin-right:0.5vw;
+    margin-top:0.5vw;
+    clear:none;
+}
+li a 
+{
+    display: block;
+    color: white;
+    text-align: center;
+    font-size:1.5vw;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover 
+{
+    background-color: #6F6E6E;
+}
+img.i1
+{
+	width:5vw;
+	float:left;
+	padding-top:0.5vw;
+	padding-left:0.5vw;
+	padding-bottom: 0.5vw;
+	padding-right:0vw;
+}
+span.intropage
+{
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-size: 2vw;
+}
+div.container
+{
+	margin-top: 10vw;
+	color: #123C69;
+}
+.signin, .signup
+{
+	margin-top: 5vw;
+}
+.button.intropage
+{
+	height: 3vw;
+	width: 7vw;
+	background-color:#AC3B61;
+	margin:1.5vw 45vw;
+	border:1px outset #EEE2DC;
+	border-radius:0.5vw;
+	font-size:1.3vw;
+	font-family:garamond;
+	color:#EEE2DC;
+	cursor: pointer;
+}
+label
+{
+	color:#123C69;
+	font-size:1.3vw;
+	font-family:bookman;
+	outline:1.5vw;
+}
+input[type=text],[type=password],[type=date],[type=number], [type=email]
+{
+	width:30vw;
+	height:2.3vw;
+	border: 2px inset white;
+	border-radius:0.4vw;
+	text-align:center;
+	font-size:1.5vw;
+	outline:1.5vw;
+	margin:1vw 32vw;
+}
+a#fpass
+{
+	color: #123C69;
 }

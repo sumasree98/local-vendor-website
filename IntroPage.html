@@ -1,35 +1,59 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>WELCOME TO ORGANISEforALL!</title>
-	<style type="text/css">
-		div.container{
-			border:5px solid black;
-			border-radius: 10px;
-			padding: 20px;
-			width:18%;
-			margin:;
-		}
-
-		.button{
-			padding:10px;
-			border:2px solid black;
-			border-radius: 5px;
-			margin-left : 80px;
-		}
-
-	</style>
+	<title>WELCOME TO ORGANISEforAll!</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
 </head>
 <body>
+	<ul class="header">
+		<li><img src="website-logo.jpg" class="i1" alt="logo"><a class="c1" href="introPage.html">ORGANISEforAll</a></li>
+	</ul>
+	<center>
 <div class="container">
-	
-	<span> Have an account already? Sign in then! <br> <br>
-	<input class="button" type="button" name="Sign In" onclick="location.href='SignIn.html';" value="SIGN IN"> </span> <br> <br>
+	<div class="signin">
+	<span class="intropage"> Have an account already? Sign in then! <br> <br></span> <br> <br>
+	<form name="form">
 
-	<span>
-	Don't have an account? Sign up with us!<br><br>
-	<input class="button" type="button" name="Sign Up" onclick="location.href='SignUp.html';" value="SIGN UP"> </span>
+			<label for="username"> Username: </label> <br>
+			<input class="input" type="text" name="username" pattern="[a-zA-Z]{6,}" required> <br><br>
+		
+			<label for="password"> Password:</label> <br>
+			<input class="input" type="password" name="password" pattern="{6,}" required> <br><br>
+		
+			<input class="button intropage" type="button" name="Sign In" onclick="location.href='SignIn.html';" value="SIGN IN">
+			<a href="" id="fpass"> Forgot Password? </a>
+		
+		</form>
+	</div>
+	<div class="signup">
+	<span class="intropage">
+	Don't have an account? Sign up with us!<br><br></span>
+	<form name="form">
 
+			<span> First Name: </span> <br>
+			<input class="input" type="text" name="firstname" pattern="[a-zA-Z]" required> <br><br>
+		
+			<span> Last Name: </span> <br>
+			<input class="input" type="text" name="lastname" pattern="[a-zA-Z]" required> <br><br>
+		
+			<span> Username: </span> <br>
+			<input class="input" type="text" name="username" pattern="[a-zA-Z]{6,}" required> <br><br>
+		
+			<span> Email: </span> <br>
+			<input class="input" type="email" name="email" required> <br><br>
+		
+			<span> Contact Number: </span> <br>
+			<input class="input" type="number" name="contactnumber" required> <br><br>
+		
+			<span> Password:</span> <br>
+			<input class="input" type="password" name="password" pattern="{6,}" required> <br><br>
+		
+			<input class="button intropage" type="button" name="Sign Up" onclick="location.href='SignUp.html';" value="SIGN UP">
+		
+		</form>
+	 
 </div>
+</div>
+</center>
 </body>
 </html>
