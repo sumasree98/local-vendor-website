@@ -1,8 +1,8 @@
 body
 {
-	background-color:#EEE2DC;
-	margin:0;
-	padding:0;
+    background-color:#EEE2DC;
+    margin:0;
+    padding:0;
 }
 ul.header
 {
@@ -49,52 +49,50 @@ img.i1
 	padding-bottom: 0.5vw;
 	padding-right:0vw;
 }
-span.intropage
+li.c2
 {
-	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-	font-size: 2vw;
+    float: right;
+    color: #EEE2DC;
+    text-align: center;
+    font-size:1.5vw;
+    text-decoration: none;
+    margin:0.5vw;
 }
-div.container
+li.c2 a
 {
-	margin-top: 5vw;
-	color: #123C69;
+    color: #EEE2DC;
 }
-.signin, .signup
+h1
 {
-	margin-top: 5vw;
+    color: #123C69;
+    text-align: center;
+    margin-top: 0;
 }
-.button.intropage
+.intro
+{
+    padding: 1vw;
+}
+.intro p
+{
+    font-size: 1.4vw;
+    margin-top: 0;
+}
+.section p
+{
+    color: #123C69;
+    text-align: center;
+    font-size: 1.5vw;
+}
+.section .button
 {
 	height: 3vw;
-	width: 7vw;
+	width: 15vw;
 	background-color:#AC3B61;
-	margin:1.5vw 45vw;
+	margin:1.5vw 42vw;
 	border:1px outset #EEE2DC;
 	border-radius:0.5vw;
 	font-size:1.3vw;
 	font-family:garamond;
 	color:#EEE2DC;
 	cursor: pointer;
-}
-label
-{
-	color:#123C69;
-	font-size:1.3vw;
-	font-family:bookman;
-	outline:1.5vw;
-}
-input[type=text],[type=password],[type=date],[type=number], [type=email]
-{
-	width:30vw;
-	height:2.3vw;
-	border: 2px inset white;
-	border-radius:0.4vw;
-	text-align:center;
-	font-size:1.5vw;
-	outline:1.5vw;
-	margin:1vw 32vw;
-}
-a#fpass
-{
-	color: #123C69;
 }
