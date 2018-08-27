@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SIGN UP</title>
+	<style type="text/css">
+
+	div.container{
+		box-sizing: border-box;
+		border: 3px solid black;
+		border-radius:10px;
+		width:40%;
+		padding: 40px;
+
+	}
+
+
+	.input{
+		padding: 5px;
+		width:300px;
+	}
+		
+
+	.button{
+			padding:10px;
+			border:2px solid black;
+			border-radius: 5px;
+			margin-left : 80px;
+			font-size:18px;
+			width:150px;
+		}
+
+
+	.button_back{
+		float:right;
+		padding:10px;
+		border:2px solid black;
+		border-radius: 5px;
+		font-size:15px;
+		width:80px;
+		margin-top:5px;
+	}
+
+
+	a:link{
+		color:blue;
+		margin-left: 100px;
+	}
+
+	a:hover{
+		color:red;
+		text-decoration: none;
+		margin-left: 100px;
+	}
+
+	</style>
+</head>
+<body>
+
+	
+<input class="button_back" type="button" name="back" value="Back" onclick="location.href='IntroPage.html';">
+
+	<div class="container">
+
+		<form name="form">
+
+	<span> USERNAME </span> <br>
+	<input class="input" type="text" name="username" pattern="[a-zA-Z]{6,}" required> <br><br>
+
+	<span> PASSWORD (6 or more characters) </span> <br>
+	<input class="input" type="password" name="password" pattern="{6,}" required> <br><br>
+
+	<input class="button" type="button" name="signin" value="Sign In" onclick="location.href='Welcome.html';"> <br> <br>
+
+	<a href=""> Forgot Password? </a>
+
+</form>
+</div>
+</body>
+</html>
