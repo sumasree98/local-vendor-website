@@ -7,12 +7,12 @@ body
 ul.header
 {
     list-style-type: none;
-    /*margin: 1vw;*/
     padding: 0.5vw;
     overflow: hidden;
     background-color: #123C69;
     top:0;
-    width:100%;
+	width:100%;
+	margin-top: 0;
 }
 a.c1
 {
@@ -57,18 +57,26 @@ span.intropage
 div.container
 {
 	margin-top: 5vw;
+	margin-left: 7vw;
 	color: #123C69;
 }
-.signin, .signup
+.signin
 {
-	margin-top: 5vw;
+	margin-top: 1vw;
+	float: left;
+}
+.signup
+{
+	margin-top: 1vw;
+	margin-right: 7vw;
+	float: right;
 }
 .button.intropage
 {
 	height: 3vw;
 	width: 7vw;
 	background-color:#AC3B61;
-	margin:1.5vw 45vw;
+	margin:1.5vw 12vw;
 	border:1px outset #EEE2DC;
 	border-radius:0.5vw;
 	font-size:1.3vw;
@@ -92,9 +100,10 @@ input[type=text],[type=password],[type=date],[type=number], [type=email]
 	text-align:center;
 	font-size:1.5vw;
 	outline:1.5vw;
-	margin:1vw 32vw;
+	margin:1vw 0vw;
 }
 a#fpass
 {
 	color: #123C69;
+	margin-left: 11.5vw;
 }
