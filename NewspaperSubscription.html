@@ -5,7 +5,7 @@
 </head><style>
 
 	.logout{
-			float:left;
+			float:right;
 		}
 
 		.button_back{
@@ -17,16 +17,97 @@
 		width:80px;
 		margin-top:5px;
 	}
+	body
+		{
+			background-color:#EEE2DC;
+			margin:0;
+			padding:0;
+		}
+		ul.header
+		{
+			list-style-type: none;
+			/*margin: 1vw;*/
+			padding: 0.5vw;
+			overflow: hidden;
+			background-color: #123C69;
+			top:0;
+			width:100%;
+			margin-top: 0%;
+		}
+		a.c1
+		{
+			float:left;
+			color: #EEE2DC;
+			text-align: center;
+			font-size:1.5vw;
+			text-decoration: none;
+			margin-left:0vw;
+			margin-right:0.5vw;
+			margin-top:0.5vw;
+			clear:none;
+		}
+		
+		li a 
+		{
+			display: block;
+			color: white;
+			text-align: center;
+			font-size:1.5vw;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+
+		li a:hover 
+		{
+			background-color: #6F6E6E;
+		}
+		img.i1
+		{
+			width:5vw;
+			float:left;
+			padding-top:0.5vw;
+			padding-left:0.5vw;
+			padding-bottom: 0.5vw;
+			padding-right:0vw;
+		}
+		span
+		{
+			font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+			font-size: 2vw;
+			color: #123C69;
+			margin-left: 25%;
+		}
+		input{
+			
+		height: 3vw;
+		width: 15vw;
+		background-color:#AC3B61;
+		margin:1.5vw 20vw;
+		border:1px outset #EEE2DC;
+		border-radius:0.5vw;
+		font-size:1.3vw;
+		font-family:garamond;
+		color:#EEE2DC;
+		cursor: pointer;
+
+		}
+		p{
+			margin-left: 20%
+		}
 
 </style>
 <body>
 
-
+		<ul class="header">
+				<li><img src="website-logo.jpg" class="i1" alt="logo"><a class="c1" href="introPage.html">ORGANISEforAll</a></li>
+				
+				<li><a href="IntroPage.html" class="logout"> Log Out </a></li>
+				</ul>
+				<br>
+				<br>
 	<input class="button_back" type="button" name="back" value="Back" onclick="location.href='Welcome.html';">
 	
-	<a href="IntroPage.html" class="logout"> Log Out </a>
-	<br>
-	<br>
+	
 
 	<p>
 	Current Subscription : 

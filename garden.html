@@ -14,28 +14,28 @@
 		height:150px;
 		float:left;
 		position: absolute;
-		border: 2px solid black;
+		border: 5px solid #AC3B61;
+		margin-left: 30px;
 	}
 
 	.textpots{
 		position: absolute;
 		margin-top:40px;
-		margin-left: 200px;
+		margin-left: 250px;
 	}
 
 	.shovel{
 		width:150px;
-		height:150px;
-		float:left;
-		margin-top: 130px;
-		border: 2px solid black;
+		height:150px;		
+		border: 5px solid #AC3B61;
+		margin-left: 650px;
 		position: absolute;
 	}
 
 	.textshovel{
 		position: absolute;
-		margin-top: 170px;
-		margin-left: 200px;
+		margin-top:40px;
+		margin-left: 870px;
 	}
 
 	.seeds{
@@ -43,70 +43,145 @@
 		height:150px;
 		float:left;
 		margin-top: 260px;
-		border: 2px solid black;
+		border: 5px solid #AC3B61;
+		margin-left: 30px;
 		position: absolute;
 	}
 
 	.textseeds{
 		position: absolute;
 		margin-top: 300px;
-		margin-left: 200px;
+		margin-left: 250px;
 	}
 
 	.sprinkler{
 		width:150px;
 		height:150px;
-		float:left;
-		margin-top: 390px;
-		border: 2px solid black;
+		margin-top: 260px;
+		border: 5px solid #AC3B61;
+		margin-left: 650px;
 		position: absolute;
 	}
 
 	.textsprinkler{
 		position: absolute;
-		margin-top: 430px;
-		margin-left: 200px;
+		margin-top: 300px;
+		margin-left: 870px;
 	}
 
 	.logout{
-			float:left;
+			float:right;
 		}
+		body
+		{
+			background-color:#EEE2DC;
+			margin:0;
+			padding:0;
+		}
+		ul.header
+		{
+			list-style-type: none;
+			/*margin: 1vw;*/
+			padding: 0.5vw;
+			overflow: hidden;
+			background-color: #123C69;
+			top:0;
+			width:100%;
+			margin-top: 0%;
+		}
+		a.c1
+		{
+			float:left;
+			color: #EEE2DC;
+			text-align: center;
+			font-size:1.5vw;
+			text-decoration: none;
+			margin-left:0vw;
+			margin-right:0.5vw;
+			margin-top:0.5vw;
+			clear:none;
+		}
+		
+		li a 
+		{
+			display: block;
+			color: white;
+			text-align: center;
+			font-size:1.5vw;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+
+		li a:hover 
+		{
+			background-color: #6F6E6E;
+		}
+		img.i1
+		{
+			width:5vw;
+			float:left;
+			padding-top:0.5vw;
+			padding-left:0.5vw;
+			padding-bottom: 0.5vw;
+			padding-right:0vw;
+		}
+		span
+		{
+			font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+			font-size: 2vw;
+			color: #123C69;
+			margin-left: 25%;
+		}
+		input{
+			
+			height: 3vw;
+			width: 15vw;
+			background-color:#AC3B61;
+			margin:1.5vw 0vw;
+			border:1px outset #EEE2DC;
+			border-radius:0.5vw;
+			font-size:1.3vw;
+			font-family:garamond;
+			color:#EEE2DC;
+			cursor: pointer;
+	
+			}
 
 </style>
 <body>
 	
-	<a href="IntroPage.html" class="logout"> Log Out </a>
-	<br>
-	<br>
+		<ul class="header">
+				<li><img src="website-logo.jpg" class="i1" alt="logo"><a class="c1" href="introPage.html">ORGANISEforAll</a></li>
+				<li><a href="cart.html" class="cart">
+						<img src="cart.jpg" class="cart" title="Cart">
+						</a></li>
+				<li><a href="IntroPage.html" class="logout"> Log Out </a></li>
+				</ul>
+				<br>
+				<br>
 
-	<a href="cart.html">
-	<img src="cart.jpg" class="cart" title="Cart">
-	</a>
 
 
-	<span> ITEMS </span>
 
 	<br><br>
 
-	<img src="pots.jpg" class="pots" title="Painted Pots for Plants"> <span class="textpots"> Painted Pots for Plants <br><br>
+	<img src="pots.jpg" class="pots" title="Painted Pots for Plants"> <span class="textpots"> Painted Pots for Plants <br>Rs. 2,000<br>
+	<input type="button" class="button" name="additem" value="ADD TO CART" onlick=""></span>
+
+	
+
+	<img src="shovel.jpg" class="shovel" title="Sturdy Metallic Shovel"> <span class="textshovel"> Sturdy Metallic Shovel <br>Rs. 900<br>
 	<input type="button" class="button" name="additem" value="ADD TO CART" onlick=""></span>
 
 	<br>
 	<br>
 
-	<img src="shovel.jpg" class="shovel" title="Sturdy Metallic Shovel"> <span class="textshovel"> Sturdy Metallic Shovel <br><br>
+	<img src="seeds.jpg" class="seeds" title="Assorted set of plantable Seeds"> <span class="textseeds"> Assorted set of plantable Seeds <br>Rs. 500<br>
 	<input type="button" class="button" name="additem" value="ADD TO CART" onlick=""></span>
 
-	<br>
-	<br>
+	
 
-	<img src="seeds.jpg" class="seeds" title="Assorted set of plantable Seeds"> <span class="textseeds"> Assorted set of plantable Seeds <br><br>
-	<input type="button" class="button" name="additem" value="ADD TO CART" onlick=""></span>
-
-	<br>
-	<br>
-
-	<img src="sprinkler.jpg" class="sprinkler" title="Effective Sprinkler"> <span class="textsprinkler"> Effective Sprinkler <br><br>
+	<img src="sprinkler.jpg" class="sprinkler" title="Effective Sprinkler"> <span class="textsprinkler"> Effective Sprinkler <br>Rs. 800<br>
 	<input type="button" class="button" name="additem" value="ADD TO CART" onlick=""></span>
 
 	<br>

@@ -3,39 +3,42 @@
 <head>
 	<title>FURNITURE</title>
 </head><style type="text/css">
-	.cart{
-			float:right;
+	img.cart{
+			margin-left: 60%;
 			width:3%;
 			height:3%;
+			background-color: #EEE2DC
 		}
+
 
 	.chair{
 		width:150px;
 		height:150px;
 		float:left;
 		position: absolute;
-		border: 2px solid black;
+		border: 5px solid #AC3B61;
+		margin-left: 30px;
+
 	}
 
 	.textchair{
 		position: absolute;
 		margin-top:40px;
-		margin-left: 200px;
+		margin-left: 250px;
 	}
 
 	.sofa{
 		width:150px;
-		height:150px;
-		float:left;
-		margin-top: 130px;
-		border: 2px solid black;
+		height:150px;		
+		border: 5px solid #AC3B61;
+		margin-left: 650px;
 		position: absolute;
 	}
 
 	.textsofa{
 		position: absolute;
-		margin-top: 170px;
-		margin-left: 200px;
+		margin-top:40px;
+		margin-left: 870px;
 	}
 
 	.table{
@@ -43,74 +46,157 @@
 		height:150px;
 		float:left;
 		margin-top: 260px;
-		border: 2px solid black;
+		border: 5px solid #AC3B61;
+		margin-left: 30px;
 		position: absolute;
 	}
 
 	.texttable{
 		position: absolute;
 		margin-top: 300px;
-		margin-left: 200px;
+		margin-left: 250px;
 	}
 
 	.shelf{
 		width:150px;
 		height:150px;
-		float:left;
-		margin-top: 390px;
-		border: 2px solid black;
+		margin-top: 260px;
+		border: 5px solid #AC3B61;
+		margin-left: 650px;
 		position: absolute;
 	}
 
 	.textshelf{
 		position: absolute;
-		margin-top: 430px;
-		margin-left: 200px;
+		margin-top: 300px;
+		margin-left: 870px;
 	}
 
 	.logout{
-			float:left;
+			float:right;
 		}
+		body
+		{
+			background-color:#EEE2DC;
+			margin:0;
+			padding:0;
+		}
+		ul.header
+		{
+			list-style-type: none;
+			/*margin: 1vw;*/
+			padding: 0.5vw;
+			overflow: hidden;
+			background-color: #123C69;
+			top:0;
+			width:100%;
+			margin-top: 0%;
+		}
+		a.c1
+		{
+			float:left;
+			color: #EEE2DC;
+			text-align: center;
+			font-size:1.5vw;
+			text-decoration: none;
+			margin-left:0vw;
+			margin-right:0.5vw;
+			margin-top:0.5vw;
+			clear:none;
+		}
+		
+		li a 
+		{
+			display: block;
+			color: white;
+			text-align: center;
+			font-size:1.5vw;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+
+		li a:hover 
+		{
+			background-color: #6F6E6E;
+		}
+		img.i1
+		{
+			width:5vw;
+			float:left;
+			padding-top:0.5vw;
+			padding-left:0.5vw;
+			padding-bottom: 0.5vw;
+			padding-right:0vw;
+		}
+		span
+		{
+			font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+			font-size: 2vw;
+			color: #123C69;
+			margin-left: 25%;
+		}
+		input{
+			
+			height: 3vw;
+			width: 15vw;
+			background-color:#AC3B61;
+			margin:1.5vw 0vw;
+			border:1px outset #EEE2DC;
+			border-radius:0.5vw;
+			font-size:1.3vw;
+			font-family:garamond;
+			color:#EEE2DC;
+			cursor: pointer;
+	
+			}
+			h1
+			{
+				
+    		color: #123C69;
+    		margin-left:25%;
+    		margin-top: 0;
+			}
 
 </style>
 <body>
 	
-	<a href="IntroPage.html" class="logout"> Log Out </a>
-	<br>
-	<br>
+		<ul class="header">
+				<li><img src="website-logo.jpg" class="i1" alt="logo"><a class="c1" href="introPage.html">ORGANISEforAll</a></li>
+				
+				<li><a href="IntroPage.html" class="logout"> Log Out </a></li>
+				</ul>
+				<br>
+				<br>
 
-	<a href="cart.html">
-	<img src="cart.jpg" class="cart" title="Cart">
-	</a>
+	
 
 
-	<span> ITEMS </span>
+				
 
 	<br><br>
 
-	<img src="chair.jpg" class="chair" title="White Artist Chair"> <span class="textchair"> White Artist Chair <br><br>
+	<img src="chair.jpg" class="chair" title="White Artist Chair"> <span class="textchair"> White Artist Chair <br>Rs. 9,000<br>
+	<input type="button" class="button" name="additem" value="ADD TO CART" onlick=""></span>
+
+	
+
+	<img src="sofa.jpg" class="sofa" title="Turquoise Velvet Armchair"> <span class="textsofa"> Turquoise Velvet Armchair <br>Rs. 11,000<br>
 	<input type="button" class="button" name="additem" value="ADD TO CART" onlick=""></span>
 
 	<br>
 	<br>
 
-	<img src="sofa.jpg" class="sofa" title="Turquoise Velvet Armchair"> <span class="textsofa"> Turquoise Velvet Armchair <br><br>
+	<img src="table.jpg" class="table" title="Wooden Carved Checkered Table"> <span class="texttable"> Wooden Carved Table <br>Rs. 7,000<br>
+	<input type="button" class="button" name="additem" value="ADD TO CART" onlick=""></span>
+
+	
+
+	<img src="shelf.jpg" class="shelf" title="Designer Partitioned Shelf"> <span class="textshelf"> Designer Partitioned Shelf <br>Rs. 5,000<br>
 	<input type="button" class="button" name="additem" value="ADD TO CART" onlick=""></span>
 
 	<br>
 	<br>
-
-	<img src="table.jpg" class="table" title="Wooden Carved Checkered Table"> <span class="texttable"> Wooden Carved Checkered Table <br><br>
-	<input type="button" class="button" name="additem" value="ADD TO CART" onlick=""></span>
-
-	<br>
-	<br>
-
-	<img src="shelf.jpg" class="shelf" title="Designer Partitioned Shelf"> <span class="textshelf"> Designer Partitioned Shelf <br><br>
-	<input type="button" class="button" name="additem" value="ADD TO CART" onlick=""></span>
-
-	<br>
-	<br>
+	<br><br>
 
 </body>
 </html>
