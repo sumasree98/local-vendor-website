@@ -5,21 +5,24 @@
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
 </head>
 <body>
+	<script src="script.js"></script>
 	<ul class="header">
 		<li><img src="website-logo.jpg" class="i1" alt="logo"><a class="c1" href="introPage.html">ORGANISEforAll</a></li>
 	</ul>
 <div class="container">
 	<div class="signin">
 	<span class="intropage"> Have an account already? Sign in then! <br> <br></span> <br> <br>
-	<form name="form">
+	<form name="form1">
 
 			<label for="username"> Username: </label> <br>
-			<input class="input" type="text" name="username" pattern="[a-zA-Z]{6,}" required> <br><br>
+			<input class="input" type="text" name="username" required>
+			<br><span id="span1"></span> <br><br>
 		
 			<label for="password"> Password:</label> <br>
-			<input class="input" type="password" name="password" pattern="{6,}" required> <br><br>
+			<input class="input" type="password" name="password" required>
+			<br><span id="span2"></span> <br><br>
 		
-			<input class="button intropage" type="button" name="Sign In" onclick="location.href='Welcome.html';" value="SIGN IN">
+			<input class="button intropage" type="button" name="Sign In" onclick="validate1()" value="Sign In">
 			<br><a href="" id="fpass"> Forgot Password? </a>
 		
 		</form>
@@ -27,27 +30,37 @@
 	<div class="signup">
 	<span class="intropage">
 	Don't have an account? Sign up with us!<br><br></span>
-	<form name="form">
+	<form name="form2">
 
-			<span> First Name: </span> <br>
-			<input class="input" type="text" name="firstname" pattern="[a-zA-Z]" required> <br><br>
+			<label for="firstname"> First Name: </label> <br>
+			<input class="input" type="text" name="firstname" required>
+			<br><span id="span3"></span> <br><br>
 		
-			<span> Last Name: </span> <br>
-			<input class="input" type="text" name="lastname" pattern="[a-zA-Z]" required> <br><br>
+			<label for="lastname"> Last Name: </label> <br>
+			<input class="input" type="text" name="lastname" required> 
+			<br><span id="span4"></span> <br><br>
 		
-			<span> Username: </span> <br>
-			<input class="input" type="text" name="username" pattern="[a-zA-Z]{6,}" required> <br><br>
+			<label for="username"> Username: </label> <br>
+			<input class="input" type="text" name="username" required> 
+			<br><span id="span5"></span> <br><br>
 		
-			<span> Email: </span> <br>
-			<input class="input" type="email" name="email" required> <br><br>
+			<label for="email"> Email: </label> <br>
+			<input class="input" type="email" name="email" required> 
+			<br><span id="span6"></span> <br><br>
 		
-			<span> Contact Number: </span> <br>
-			<input class="input" type="number" name="contactnumber" required> <br><br>
+			<label for="contactnumber"> Contact Number: </label> <br>
+			<input class="input" type="number" name="contactnumber" required> 
+			<br><span id="span7"></span> <br><br>
 		
-			<span> Password:</span> <br>
-			<input class="input" type="password" name="password" pattern="{6,}" required> <br><br>
+			<label for="password"> Password:</label> <br>
+			<input class="input" type="password" name="password" required> 
+			<br><span id="span8"></span> <br><br>
+
+			<label for="conpassword">Confirm Password:</label> <br>
+			<input class="input" type="password" name="conpassword" required> 
+			<br><span id="span9"></span> <br><br>
 		
-			<input class="button intropage" type="button" name="Sign Up" onclick="location.href='Welcome.html';" value="SIGN UP">
+			<input class="button intropage" type="button" name="Sign Up" onclick="validate2()" value="Sign Up">
 		
 		</form>
 	 
