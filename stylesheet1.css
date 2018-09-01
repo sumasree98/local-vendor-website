@@ -17,12 +17,12 @@ ul.header
 a.c1
 {
 	float:left;
-    color: #EEE2DC;
-    text-align: center;
-    font-size:1.5vw;
-    text-decoration: none;
-    margin-left:0vw;
-    margin-right:0.5vw;
+	color: #EEE2DC;
+	text-align: center;
+	font-size:1.5vw;
+	text-decoration: none;
+	margin-left:0vw;
+	margin-right:0.5vw;
     margin-top:0.5vw;
     clear:none;
 }
@@ -32,14 +32,15 @@ li a
     color: white;
     text-align: center;
     font-size:1.5vw;
-    padding: 14px 16px;
+    padding: 17px 16px;
     text-decoration: none;
 }
 
 li a:hover 
 {
-    background-color: #6F6E6E;
+    color: #A4B4C6;
 }
+
 img.i1
 {
 	width:5vw;
@@ -62,11 +63,16 @@ li.c2 a
 {
     color: #EEE2DC;
 }
+
+li.c2 a:hover{
+    color: #A4B4C6;
+}
 h1
 {
     color: #123C69;
     text-align: center;
     margin-top: 0;
+    font-size:2.5vw;
 }
 .intro
 {
@@ -74,26 +80,34 @@ h1
 }
 .intro p
 {
-    font-size: 1.4vw;
+    font-family: 'Slabo';
+    font-size: 1.5vw;
     margin-top: 0;
     text-align: justify;
 }
 .section p
 {
+    font-family: 'LobsterTwo';
     color: #123C69;
     text-align: center;
-    font-size: 1.5vw;
+    font-size: 1.8vw;
 }
 .section .button
 {
 	height: 3vw;
 	width: 15vw;
 	background-color:#AC3B61;
-	margin:1.5vw 42vw;
+	margin:1.0vw 42vw;
 	border:1px outset #EEE2DC;
 	border-radius:0.5vw;
 	font-size:1.3vw;
 	font-family:garamond;
 	color:#EEE2DC;
 	cursor: pointer;
+}
+
+.intrude{
+    font-family:'Times New Roman';
+    font-size:22px;
+    text-decoration: underline;
 }
