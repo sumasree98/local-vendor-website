@@ -9,7 +9,7 @@ background: linear-gradient(
                      rgba(20,20,20, .85), 
                      rgba(20,20,20, .85)),
                      url( 'contactus.jpg');
-                     background-size: 90%;
+                     background-size: auto 100%;
                      background-attachment: fixed;
                      overflow: scroll;
                      object-fit: fill;
@@ -109,6 +109,20 @@ p{
 	font-size:23px;
 	color:rgb(175,238,238,0.8);
 }
+::-webkit-input-placeholder { /* Chrome */
+  color: black;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: black;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: black;
+  opacity: 1;
+}
+:-moz-placeholder { /* Firefox 4 - 18 */
+  color: black;
+  opacity: 1;
+}
 </style>
 
 
@@ -133,7 +147,7 @@ p{
 <br>
 <br>
 
-<textarea class="text" rows="20" cols="138">Enter Question here.</textarea>
+<textarea class="text" rows="20" cols="138" placeholder="Enter Question here."></textarea>
 <br>
 <br>
 
