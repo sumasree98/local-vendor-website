@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign In</title>
+	<style>
+body{
+	background: linear-gradient(
+                     rgba(20,20,20, .8), 
+                     rgba(20,20,20, .8)),
+                     url( 'SignUp.jpg');
+                     background-size: 100%;
+                     background-attachment: fixed;
+                     overflow: scroll; 
+}
+
+.back{
+	position: absolute;
+	margin-left:1290px;
+	margin-top:20px;
+}
+
+.buttonback{
+	padding:7px;
+	width:80px;
+	border:2px solid black;
+	border-radius:10px;
+	font-size:20px;
+	font-family:'LobsterTwo';
+	background-color: rgb(255,255,255,0.6);
+	margin-left:35%;
+}
+
+.buttonback:hover{
+	background-color: white;
+	color:maroon;
+}
+
+.header{
+	font-family: 'Petit Formal Script';
+	font-size: 50px;
+	margin-top:20px;
+	padding:10px;
+	color:rgb(255,255,255,0.9);
+	font-weight:bolder;
+}
+
+.container{
+	background-color: rgb(255,255,255,0.3);
+	padding:40px 70px;
+	width:36%;
+	box-sizing: border-box;
+	margin:auto;
+	border:2px solid pink;
+}
+
+label{
+	font-family: 'LobsterTwo';
+	font-size:24px;
+	color:pink;
+	font-weight: unset;
+}
+
+.input{
+	width:350px;
+	height:20px;
+}
+
+.input[type="text"]{
+	font-family: "Times New Roman";
+	font-size: 18px;
+	color:maroon;
+}
+
+.buttonintropage{
+	padding:10px;
+	width:100px;
+	border:2px solid black;
+	border-radius:10px;
+	font-size:20px;
+	font-family:'LobsterTwo';
+	background-color: rgb(255,255,255,0.6);
+	margin-left:35%;
+}
+
+.buttonintropage:hover{
+	background-color: white;
+	color:maroon;
+}
+
+#span1,#span2{
+	font-family:'LobsterTwo';
+	color:white;
+	font-size:18px;
+}
+
+#fpass{
+	color:lightblue;
+}
+
+</style>
+</head>
+<body>
+	<script src="script.js"></script>
+
+<div class="back">
+	<input type="button" class="buttonback" name="back" value="Back" onclick="location.href='Main.html';">
+</div>
+
+<center>
+	<div class="header">
+		Sign In!
+	</div>
+	</center>
+	<br>
+	<br>
+
+<div class="container">
+	<form name="form1" method="post">
+		<label for="username"> Username: </label> <br>
+			<input class="input" type="text" name="username" required autofocus>
+			<br><span id="span1"></span> <br><br>
+		
+			<label for="password"> Password:</label> <br>
+			<input class="input" type="password" name="password" required>
+			<br><span id="span2"></span>
+
+			<a href="" id="fpass"> Forgot Password? </a> <br><br>
+		
+			<input class="buttonintropage" type="button" name="Sign In" onclick="validate1()" value="Sign In">
+			
+</form>
+</div>
+</body>
+</html>

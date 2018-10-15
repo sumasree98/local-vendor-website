@@ -1,10 +1,80 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title> GARDEN </title>
+	<title>GARDEN</title>
 </head><style type="text/css">
+
+body{
+background: linear-gradient(
+                     rgba(20,20,20, .85), 
+                     rgba(20,20,20, .85)),
+                     url( 'Garden.jpg');
+                     background-size: 90%;
+                     background-attachment: fixed;
+                     overflow: scroll;
+}
+
+#header{
+	font-family: 'Petit Formal Script';
+	font-weight:bolder;
+	font-size:25px;
+	color:rgb(255,255,255,0.8);
+	border:3px solid white;
+	padding:10px;
+	background-color: rgb(255,255,255,0.2);
+	width:14%;
+}
+
+
+.header{
+	margin-top: 20px;;
+	border-bottom:3px solid white;
+}
+
+
+.buttonback{
+	padding:7px;
+	width:80px;
+	border:2px solid white;
+	font-size:20px;
+	font-family:'LobsterTwo';
+	background-color: rgb(255,255,255,0.2);
+	float:right;
+	color:white;
+}
+
+.buttonback:hover{
+	background-color: white;
+	color:maroon;
+	border:2px solid black;
+}
+
+.logoutbutton{
+	padding:7px;
+	margin-right: 10px;
+	width:80px;
+	border:2px solid white;
+	font-size:20px;
+	font-family:'LobsterTwo';
+	background-color: rgb(255,255,255,0.2);
+	float:right;
+	color:white;
+}
+
+.logoutbutton:hover{
+	background-color: white;
+	color:maroon;
+	border:2px solid black;
+}
+
+#main{
+			margin-left:450px;
+			font-family:'Petit Formal Script';
+			font-size:40px;
+			color: #FFCCCC;
+}
 	.cart{
-		float:right;
+			float:right;
 			padding-right:5px;
 			padding-top: 2px;
 			width:18%;
@@ -12,186 +82,130 @@
 			z-index: 1;
 		}
 
+
 	.pots{
 		width:150px;
 		height:150px;
 		float:left;
 		position: absolute;
-		border: 5px solid #AC3B61;
+		border: 5px solid white;
 		margin-left: 50px;
+		margin-top: 50px;
+
 	}
 
 	.textpots{
 		position: absolute;
-		margin-top:10px;
+		margin-top:65px;
 		margin-left: 250px;
-		font-size: 25px;
+				font-size: 25px;
+			color:pink;
 	}
+
 
 	.shovel{
 		width:150px;
 		height:150px;		
-		border: 5px solid #AC3B61;
+		border: 5px solid white;
 		margin-left: 700px;
 		position: absolute;
+			margin-top: 50px;
 	}
 
 	.textshovel{
 		position: absolute;
-		margin-top:10px;
+	margin-top:65px;
 		margin-left: 900px;
 		font-size: 25px;
+			color:pink;
 	}
 
 	.seeds{
 		width:150px;
 		height:150px;
 		float:left;
-		margin-top: 260px;
-		border: 5px solid #AC3B61;
+		margin-top: 300px;
+		border: 5px solid white;
 		margin-left: 50px;
 		position: absolute;
 	}
 
 	.textseeds{
 		position: absolute;
-		margin-top: 271px;
+		margin-top: 316px;
 		margin-left: 250px;
-		font-size: 25px;
+				font-size: 25px;
+			color:pink;
 	}
 
 	.sprinkler{
 		width:150px;
 		height:150px;
-		margin-top: 260px;
-		border: 5px solid #AC3B61;
+		margin-top: 300px;
+		border: 5px solid white;
 		margin-left: 700px;
 		position: absolute;
 	}
 
 	.textsprinkler{
 		position: absolute;
-		margin-top: 271px;
+		margin-top: 316px;
 		margin-left: 900px;
-		font-size: 25px;
+				font-size: 25px;
+		color:pink;
 	}
 
 	.logout{
-		float:right;
+			float:right;
 			padding: 25px 20px;
 			color: #EEE2DC;
 		}
 
-		.back{
+	.back{
 		float:right;
 			padding: 25px 20px;
 			color: #EEE2DC;
 			font-size:1.6vw;
 	}
-		body
-		{
-			background-color:#EEE2DC;
-			margin:0;
-			padding:0;
-		}
-		ul.header
-		{
-			list-style-type: none;
-			/*margin: 1vw;*/
-			padding: 0.5vw;
-			overflow: hidden;
-			background-color: #123C69;
-			top:0;
-			width:100%;
-			margin-top: 0%;
-		}
-		a.c1
-		{
-			float:left;
-			color: #EEE2DC;
-			text-align: center;
-			font-size:1.5vw;
-			text-decoration: none;
-			margin-left:0vw;
-			margin-right:0.5vw;
-			margin-top:0.5vw;
-			clear:none;
-		}
-		
-		li a 
-		{
-			display: block;
-			color: white;
-			text-align: center;
-			font-size:1.5vw;
-			padding: 17px 16px;
-			text-decoration: none;
-		}
 
-		li a:hover 
-		{
-			color: #A4B4C6;
-		}
-		img.i1
-		{
-			width:5vw;
-			float:left;
-			padding-top:0.5vw;
-			padding-left:0.5vw;
-			padding-bottom: 0.5vw;
-			padding-right:0vw;
-		}
-		span
-		{
-			font-family:'Tangerine';
-			font-size: 3vw;
-			color: #123C69;
-			margin-left: 25%;
-		}
-		input{
-			
-			height: 3vw;
-			width: 15vw;
-			background-color:#AC3B61;
-			margin:1.5vw 0vw;
-			border:1px outset #EEE2DC;
-			border-radius:0.5vw;
-			font-size:1.3vw;
-			font-family:garamond;
-			color:#EEE2DC;
-			cursor: pointer;
+
+	.button{
+	padding:7px;
+	margin-top:20px;
+	width:150px;
+	border:2px solid white;
+	border-radius:8px;
+	font-size:15px;
+	font-family:'Times New Roman';
+	background-color: rgb(255,255,255,0.2);
+	color:white;
+}
+
+.button:hover{
+	background-color: rgb(255,204,204,0.5);
+	color:white;
+	border:2px solid black;
 	}
-
-	.pagename{
-			margin-top:10px;
-			margin-left:670px;
-			font-family:'Petit Formal Script';
-			font-size:40px;
-			color: #EEE2DC;
-		}
 
 
 </style>
 <body>
-	
-		<ul class="header">
-				<li><img src="website-logo.jpg" class="i1" alt="logo"><a class="c1" href="introPage.html">ORGANISEforALL</a></li>
-				<li><a href="IntroPage.html" class="logout"> Log Out </a></li>
-				<li><a href="homedecor.html" class="back"> Back </a></li>
-				<li class="pagename">Garden</li>
-				</ul>
-				<a href="cart.html" class="cart">
-					<img src="cart.jpg" class="cart" title="Cart">
-					</a>
-				<br>
-				<br>
+
+	<div class="header">
+		<span id="header">OrganiseForAll</span>
 
 
+	<span id="main"> Garden </span>
+				
+	<button name="back" class="buttonback" value="Back" onclick="location.href='homedecor.html';"> Back </button>
+	<button name="logout" class="logoutbutton" value="Logout" onclick="location.href='homedecor.html';"> Log Out </button>
 
+<br><br>
 
+	</div>
 	<br><br>
 
-	<img src="pots.jpg" class="pots" title="Painted Pots for Plants"> <span class="textpots"> Painted Pots for Plants <br>Rs. 2,000<br>
+	<<img src="pots.jpg" class="pots" title="Painted Pots for Plants"> <span class="textpots"> Painted Pots for Plants <br>Rs. 2,000<br>
 	<input type="button" class="button" name="additem" value="ADD TO CART" onlick=""></span>
 
 	

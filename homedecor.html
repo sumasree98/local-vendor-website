@@ -1,12 +1,84 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>HOME DECOR</title>
-	<style type="text/css">
-		body{
-			background-color: #EEE2DC;
-		}
-		div.containerF{
+	<title>Home Decor</title>
+
+<style>
+
+body{
+background: linear-gradient(
+                     rgba(20,20,20, .85), 
+                     rgba(20,20,20, .85)),
+                     url( 'homedecor.jpg');
+                     background-size: 90%;
+                     background-attachment: fixed;
+                     overflow: scroll;
+}
+#header{
+	font-family: 'Petit Formal Script';
+	font-weight:bolder;
+	font-size:25px;
+	color:rgb(255,255,255,0.8);
+	border:3px solid white;
+	padding:10px;
+	background-color: rgb(255,255,255,0.2);
+	width:14%;
+}
+
+.header{
+	margin-top: 20px;;
+	border-bottom:3px solid white;
+}
+.buttonback{
+	padding:7px;
+	width:80px;
+	border:2px solid white;
+	font-size:20px;
+	font-family:'LobsterTwo';
+	background-color: rgb(255,255,255,0.2);
+	float:right;
+	color:white;
+}
+
+.buttonback:hover{
+	background-color: white;
+	color:maroon;
+	border:2px solid black;
+}
+
+.logoutbutton{
+	padding:7px;
+	margin-right: 10px;
+	width:80px;
+	border:2px solid white;
+	font-size:20px;
+	font-family:'LobsterTwo';
+	background-color: rgb(255,255,255,0.2);
+	float:right;
+	color:white;
+}
+
+.logoutbutton:hover{
+	background-color: white;
+	color:maroon;
+	border:2px solid black;
+}
+
+#main{
+			margin-left:370px;
+			font-family:'Petit Formal Script';
+			font-size:40px;
+			color: #FFCCCC;
+}
+
+.intro{
+	font-family: 'Rochester';
+	color:#FF9999;
+	font-size: 40px;
+	margin-left: 25%;
+}
+
+div.containerF{
 			width:250px;
 			height:200px;
 			margin-top:80px;
@@ -41,14 +113,14 @@
 		.furniture{
 			width:250px;
 			height:200px;
-			border:5px solid #AC3B61;
+			border:3px solid white;
 			border-radius: 13%;
 		}
 
 		.kitchen{
 			width:250px;
 			height:200px;
-			border:5px solid #AC3B61;
+			border:3px solid white;
 			border-radius: 13%;
 		}
 
@@ -56,7 +128,7 @@
 		.bedroom{
 			width:250px;
 			height:200px;
-			border:5px solid #AC3B61;
+			border:3px solid white;
 			border-radius: 13%;
 		}
 
@@ -64,7 +136,7 @@
 		.garden{
 			width:250px;
 			height:200px;
-			border:5px solid #AC3B61;
+			border:3px solid white;
 			border-radius: 13%;
 		}
 
@@ -103,148 +175,65 @@
 			overflow:hidden;
 		}
 
-
 		p{
-			text-align:justify;
-		}
-
-		a:hover{
-			text-decoration: none;
-			
-		}
-
-		.logout{
-			float:right;
-			padding: 25px 20px;
-			color: #EEE2DC;
-		}
-
-		.back{
-			float:right;
-			padding: 25px 20px;
-			color: #EEE2DC;
-			font-size:1.6vw;
-		}
-
-		body
-		{
-			background-color:#EEE2DC;
-			margin:0;
-			padding:0;
-		}
-		ul.header
-		{
-			list-style-type: none;
-			/*margin: 1vw;*/
-			padding: 0.5vw;
-			overflow: hidden;
-			background-color: #123C69;
-			top:0;
-			width:100%;
-			margin-top: 0%;
-		}
-		a.c1
-		{
-			float:left;
-			color: #EEE2DC;
-			text-align: center;
-			font-size:1.5vw;
-			text-decoration: none;
-			margin-left:0vw;
-			margin-right:0.5vw;
-			margin-top:0.5vw;
-			clear:none;
-		}
-		li a 
-		{
-			display: block;
-			color: white;
-			text-align: center;
-			font-size:1.5vw;
-			padding: 17px 16px;
-			text-decoration: none;
-		}
-
-		li a:hover 
-		{
-			color: #A4B4C6;
-		}
-		img.i1
-		{
-			width:5vw;
-			float:left;
-			padding-top:0.5vw;
-			padding-left:0.5vw;
-			padding-bottom: 0.5vw;
-			padding-right:0vw;
-		}
-		span
-		{
-			font-family:'Playball';
-			font-size: 2.5vw;
-			color: #123C69;
-			margin-left: 22%;
-		}
-		p{
-			font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+			font-family: 'Petit Formal Script';
 			font-size: 2vw;
-			color: #123C69;
+			color: pink;
 			margin-left: 70px;
 		}
 
 		p.fur{
-			font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+			font-family: 'Petit Formal Script';
 			font-size: 2vw;
-			color: #123C69;
+			color: pink;
 			margin-left: 50px;
 		}
 		
-		.pagename{
-			margin-top:10px;
-			margin-left:670px;
-			font-family:'Petit Formal Script';
-			font-size:40px;
-			color: #EEE2DC;
-		}
-	</style>
-</head>
+
+</style>
 <body>
-	<ul class="header">
-	<li><img src="website-logo.jpg" class="i1" alt="logo"><a class="c1" href="introPage.html">ORGANISEforALL</a></li>
-	<li><a href="IntroPage.html" class="logout"> Log Out </a></li>
-	<li><a href="Welcome.html" class="back"> Back </a></li>
-	<li class="pagename">Home Decor</li>
-	</ul>
-	<br>
-	<br>
+
+	<div class="header">
+		<span id="header">OrganiseForAll</span>
+
+
+	<span id="main"> Home Decor </span>
+				
+	<button name="back" class="buttonback" value="Back" onclick="location.href='Welcome.html';"> Back </button>
+	<button name="logout" class="logoutbutton" value="Logout" onclick="location.href='Main.html';"> Log Out </button>
+
+<br><br>
 	
-	<span> Which field of household items would you like to select? </span> <br> <br>
+	</div>
+	<br><br><br>
+
+	<span class="intro"> Which field of household items would you like to select? </span> <br> <br>
 	
 	<div class="containerF">
 	<a href="furniture.html">
 	<img src="Furniture.jpg" class="furniture" title="Furniture">
-	<p class="fur"> FURNITURE </p>
+	<p class="fur"> Furniture </p>
 	</a>
 	</div>
 
 	<div class="containerK">
 	<a href="kitchen.html">
 	<img src="Kitchen.jpg" class="kitchen" title="Kitchen">	
-	<p> KITCHEN </p>
+	<p> Kitchen</p>
 	</a>
 	</div>
 
 	<div class="containerB">
 	<a href="bedroom.html">
 	<img src="Bedroom.jpg" class="bedroom" title="Bedroom">
-	<p> BEDROOM </p>
+	<p> Bedroom </p>
 	</a>
 	</div>
 
 	<div class="containerG">
 	<a href="garden.html">
 	<img src="Garden.jpg" class="garden" title="Garden">
-	<p> GARDEN </p>
+	<p> Garden </p>
 	</a>
 	</div>
 
@@ -253,3 +242,4 @@
 
 </body>
 </html>
+
