@@ -52,6 +52,8 @@ background: linear-gradient(
 	background-color: rgb(255,255,255,0.2);
 	float:right;
 	color:white;
+	border-radius: 10px;
+	margin-right: 10px;
 }
 
 .buttonback:hover{
@@ -70,6 +72,27 @@ background: linear-gradient(
 	background-color: rgb(255,255,255,0.2);
 	float:right;
 	color:white;
+	border-radius: 10px;
+}
+
+.cartbutton
+{
+    padding:7px;
+	width:80px;
+	border:2px solid white;
+    margin-right: 10px;
+	font-size:20px;
+	font-family:'LobsterTwo';
+	background-color: rgb(255,255,255,0.2);
+	float:right;
+	color:white;
+	border-radius: 10px;
+}
+.cartbutton:hover
+{
+    background-color: white;
+	color:maroon;
+	border:2px solid black;
 }
 
 .logoutbutton:hover{
@@ -206,7 +229,8 @@ background: linear-gradient(
 
 
 	<span id="main"> Bedroom </span>
-				
+
+	<button name="cart" class="cartbutton" value="Cart" onclick="location.href='cart.html';"> Cart </button>
 	<button name="back" class="buttonback" value="Back" onclick="location.href='homedecor.html';"> Back </button>
 	<button name="logout" class="logoutbutton" value="Logout" onclick="location.href='Main.html';"> Log Out </button>
 
