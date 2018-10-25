@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GARDEN</title>
+</head><style type="text/css">
+@font-face
+{
+	font-family: 'Petit Formal Script';
+	src: url('PetitFormalScript-Regular.ttf');
+}
+@font-face
+{
+	font-family: 'LobsterTwo';
+	src: url('LobsterTwo-Regular.otf ');
+}
+@font-face
+{
+	font-family: 'Rochester';
+	src: url('Rochester-Regular.otf');
+}
+body{
+background: linear-gradient(
+                     rgba(20,20,20, .85), 
+                     rgba(20,20,20, .85)),
+                     url( 'Garden.jpg');
+                     background-size: 100% auto;
+                     background-attachment: fixed;
+                     overflow: scroll;
+}
+
+#header{
+	font-family: 'Petit Formal Script';
+	font-weight:bolder;
+	font-size:25px;
+	color:rgb(255,255,255,0.8);
+	border:3px solid white;
+	padding:10px;
+	background-color: rgb(255,255,255,0.2);
+	width:14%;
+}
+
+
+.header{
+	margin-top: 20px;;
+	border-bottom:3px solid white;
+}
+
+
+.buttonback{
+	padding:7px;
+	width:80px;
+	border:2px solid white;
+	font-size:20px;
+	font-family:'LobsterTwo';
+	background-color: rgb(255,255,255,0.2);
+	float:right;
+	color:white;
+	border-radius: 10px;
+	margin-right: 10px;
+}
+
+.buttonback:hover{
+	background-color: white;
+	color:maroon;
+	border:2px solid black;
+}
+
+.logoutbutton{
+	padding:7px;
+	margin-right: 10px;
+	width:80px;
+	border:2px solid white;
+	font-size:20px;
+	font-family:'LobsterTwo';
+	background-color: rgb(255,255,255,0.2);
+	float:right;
+	color:white;
+	border-radius: 10px;
+}
+
+.logoutbutton:hover{
+	background-color: white;
+	color:maroon;
+	border:2px solid black;
+}
+
+.cartbutton
+{
+    padding:7px;
+	width:80px;
+	border:2px solid white;
+    margin-right: 10px;
+	font-size:20px;
+	font-family:'LobsterTwo';
+	background-color: rgb(255,255,255,0.2);
+	float:right;
+	color:white;
+	border-radius: 10px;
+}
+.cartbutton:hover
+{
+    background-color: white;
+	color:maroon;
+	border:2px solid black;
+}
+
+#main{
+			margin-left:450px;
+			font-family:'Petit Formal Script';
+			font-size:40px;
+			color: #FFCCCC;
+}
+	.cart{
+			float:right;
+			padding-right:5px;
+			padding-top: 2px;
+			width:18%;
+			height:18%;
+			z-index: 1;
+		}
+
+
+	.pots{
+		width:150px;
+		height:150px;
+		float:left;
+		position: absolute;
+		border: 5px solid white;
+		margin-left: 50px;
+		margin-top: 50px;
+
+	}
+
+	.textpots{
+		position: absolute;
+		margin-top:65px;
+		margin-left: 250px;
+				font-size: 25px;
+			color:pink;
+	}
+
+
+	.shovel{
+		width:150px;
+		height:150px;		
+		border: 5px solid white;
+		margin-left: 700px;
+		position: absolute;
+			margin-top: 50px;
+	}
+
+	.textshovel{
+		position: absolute;
+	margin-top:65px;
+		margin-left: 900px;
+		font-size: 25px;
+			color:pink;
+	}
+
+	.seeds{
+		width:150px;
+		height:150px;
+		float:left;
+		margin-top: 300px;
+		border: 5px solid white;
+		margin-left: 50px;
+		position: absolute;
+	}
+
+	.textseeds{
+		position: absolute;
+		margin-top: 316px;
+		margin-left: 250px;
+				font-size: 25px;
+			color:pink;
+	}
+
+	.sprinkler{
+		width:150px;
+		height:150px;
+		margin-top: 300px;
+		border: 5px solid white;
+		margin-left: 700px;
+		position: absolute;
+	}
+
+	.textsprinkler{
+		position: absolute;
+		margin-top: 316px;
+		margin-left: 900px;
+				font-size: 25px;
+		color:pink;
+	}
+
+	.logout{
+			float:right;
+			padding: 25px 20px;
+			color: #EEE2DC;
+		}
+
+	.back{
+		float:right;
+			padding: 25px 20px;
+			color: #EEE2DC;
+			font-size:1.6vw;
+	}
+
+
+	.button{
+	padding:7px;
+	margin-top:20px;
+	width:150px;
+	border:2px solid white;
+	border-radius:8px;
+	font-size:15px;
+	font-family:'Times New Roman';
+	background-color: rgb(255,255,255,0.2);
+	color:white;
+}
+
+.button:hover{
+	background-color: rgb(255,204,204,0.5);
+	color:white;
+	border:2px solid black;
+	}
+
+
+</style>
+<body>
+
+	<div class="header">
+		<span id="header">OrganiseForAll</span>
+
+
+	<span id="main"> Garden </span>
+				
+	<button name="cart" class="cartbutton" value="Cart" onclick="location.href='cart.php';"> Cart </button>
+	<button name="back" class="buttonback" value="Back" onclick="location.href='homedecor.html';"> Back </button>
+	<button name="logout" class="logoutbutton" value="Logout" onclick="location.href='homedecor.html';"> Log Out </button>
+
+<br><br>
+
+	</div>
+	<br><br>
+	<form method="post" action="furnitures.php">
+	<img src="pots.jpg" class="pots" title="Painted Pots for Plants"> <span class="textpots"> Painted Pots for Plants <br>Rs. 2,000<br>
+	<input type="submit" class="button" name="1" value="Painted Pots for Plants" onlick=""></span>
+</form>	
+	
+	<form method="post" action="furnitures.php">
+	<img src="shovel.jpg" class="shovel" title="Sturdy Metallic Shovel"> <span class="textshovel"> Sturdy Metallic Shovel <br>Rs. 900<br>
+	<input type="submit" class="button" name="1" value="Sturdy Metallic Shovel" onlick=""></span>
+</form>	
+	<br>
+	<br>
+	<form method="post" action="furnitures.php">
+	<img src="seeds.jpg" class="seeds" title="Assorted set of plantable Seeds"> <span class="textseeds"> Assorted set of plantable Seeds <br>Rs. 500<br>
+	<input type="submit" class="button" name="1" value="Assorted set of plantable Seeds" onlick=""></span>
+</form>	
+	
+	<form method="post" action="furnitures.php">
+	<img src="sprinkler.jpg" class="sprinkler" title="Effective Sprinkler"> <span class="textsprinkler"> Effective Sprinkler <br>Rs. 800<br>
+	<input type="submit" class="button" name="1" value="Effective Sprinkler" onlick=""></span>
+	</form>	
+	<br>
+	<br>
+
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>QUESTIONS</title>
+</head><style type="text/css">
+@font-face
+{
+	font-family: 'Petit Formal Script';
+	src: url('PetitFormalScript-Regular.ttf');
+}
+@font-face
+{
+	font-family: 'LobsterTwo';
+	src: url('LobsterTwo-Regular.otf ');
+}
+@font-face
+{
+	font-family: 'Rochester';
+	src: url('Rochester-Regular.otf');
+}
+body{
+background: linear-gradient(
+                     rgba(20,20,20, .85), 
+                     rgba(20,20,20, .85)),
+                     url( 'contactus.jpg');
+                     background-size: auto 100%;
+                     background-attachment: fixed;
+                     overflow: scroll;
+                     object-fit: fill;
+}
+
+#header{
+	font-family: 'Petit Formal Script';
+	font-weight:bolder;
+	font-size:25px;
+	color:rgb(255,255,255,0.8);
+	border:3px solid white;
+	padding:10px;
+	background-color: rgb(255,255,255,0.2);
+	width:14%;
+}
+
+
+.header{
+	margin-top: 20px;;
+	border-bottom:3px solid white;
+}
+
+
+.buttonback{
+	padding:7px;
+	width:80px;
+	border:2px solid white;
+	font-size:20px;
+	font-family:'LobsterTwo';
+	background-color: rgb(255,255,255,0.2);
+	float:right;
+	color:white;
+	border-radius: 10px;
+}
+
+.buttonback:hover{
+	background-color: white;
+	color:maroon;
+	border:2px solid black;
+}
+
+.buttonpost{
+	padding:7px;
+	width:80px;
+	border:2px solid white;
+	font-size:20px;
+	font-family:'LobsterTwo';
+	background-color: rgb(255,255,255,0.2);
+	color:white;
+	border-radius: 10px;
+}
+
+.buttonpost:hover{
+background-color: white;
+	color:maroon;
+	border:2px solid black;
+
+}
+.logoutbutton{
+	padding:7px;
+	margin-right: 10px;
+	width:80px;
+	border:2px solid white;
+	font-size:20px;
+	font-family:'LobsterTwo';
+	background-color: rgb(255,255,255,0.2);
+	float:right;
+	color:white;
+	border-radius: 10px;
+}
+
+.logoutbutton:hover{
+	background-color: white;
+	color:maroon;
+	border:2px solid black;
+}
+
+#main{
+			margin-left:430px;
+			font-family:'Petit Formal Script';
+			font-size:40px;
+			color: #FFCCCC;
+}
+
+textarea{
+	font-size: 20px;
+	font-family: 'Times New Roman';
+	background-color:rgb(175,238,238,0.5);
+	border:2px solid white;
+	padding:10px;
+
+}
+input{
+	font-size: 20px;
+	font-family: 'Times New Roman';
+	background-color:rgb(175,238,238,0.5);
+	border:2px solid white;
+	padding:10px;
+}
+
+span{
+	color:pink;
+}
+
+p{
+	font-family: 'Times New Roman';
+	font-size:23px;
+	color:rgb(175,238,238,0.8);
+}
+::-webkit-input-placeholder { /* Chrome */
+  color: black;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: black;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: black;
+  opacity: 1;
+}
+:-moz-placeholder { /* Firefox 4 - 18 */
+  color: black;
+  opacity: 1;
+}
+</style>
+
+
+<body>
+
+	<div class="header">
+		<span id="header">OrganiseForAll</span>
+
+
+	<span id="main"> Questions </span>
+				
+	<button name="back" class="buttonback" value="Back" onclick="location.href='Welcome.html';"> Back </button>
+	<button name="logout" class="logoutbutton" value="Logout" onclick="location.href='Main.html';"> Log Out </button>
+
+<br><br>
+
+	</div>
+	<br>
+	<br>
+
+<p> Is there something you wish to ask us? You can view our contacts under the Complaint heading or you can post the complaint in the space given below. We will try to get back to you as soon as we can.
+<br>
+<br>
+<form method="post" action="question.php">
+<input type="number" name="number" placeholder="Enter phone number"><br><br>
+<input type="text" name="address" placeholder="Enter address"><br><br>
+<textarea class="text" name="complaint" rows="20" cols="100" placeholder="Enter Complaint here."></textarea>
+<br>
+<br>
+
+
+<input type="submit" name="submit" value="Post">
+</form>
+

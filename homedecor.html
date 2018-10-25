@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home Decor</title>
+
+<style>
+@font-face
+{
+	font-family: 'Petit Formal Script';
+	src: url('PetitFormalScript-Regular.ttf');
+}
+@font-face
+{
+	font-family: 'LobsterTwo';
+	src: url('LobsterTwo-Regular.otf ');
+}
+@font-face
+{
+	font-family: 'Rochester';
+	src: url('Rochester-Regular.otf');
+}
+body{
+background: linear-gradient(
+                     rgba(20,20,20, .85), 
+                     rgba(20,20,20, .85)),
+                     url( 'homedecor.jpg');
+                     background-size: 100% auto;
+                     background-attachment: fixed;
+                     overflow: scroll;
+}
+#header{
+	font-family: 'Petit Formal Script';
+	font-weight:bolder;
+	font-size:25px;
+	color:rgb(255,255,255,0.8);
+	border:3px solid white;
+	padding:10px;
+	background-color: rgb(255,255,255,0.2);
+	width:14%;
+}
+
+.header{
+	margin-top: 20px;;
+	border-bottom:3px solid white;
+}
+.buttonback{
+	padding:7px;
+	width:80px;
+	border:2px solid white;
+    margin-right: 10px;
+	font-size:20px;
+	font-family:'LobsterTwo';
+	background-color: rgb(255,255,255,0.2);
+	float:right;
+	color:white;
+	border-radius: 10px;
+}
+
+.buttonback:hover{
+	background-color: white;
+	color:maroon;
+	border:2px solid black;
+}
+
+.logoutbutton{
+	padding:7px;
+	margin-right: 10px;
+	width:80px;
+	border:2px solid white;
+	font-size:20px;
+	font-family:'LobsterTwo';
+	background-color: rgb(255,255,255,0.2);
+	float:right;
+	color:white;
+	border-radius: 10px;
+}
+
+.logoutbutton:hover{
+	background-color: white;
+	color:maroon;
+	border:2px solid black;
+}
+
+
+#main{
+			margin-left:350px;
+			font-family:'Petit Formal Script';
+			font-size:40px;
+			color: #FFCCCC;
+}
+
+.intro{
+	font-family: 'Rochester';
+	color:#FF9999;
+	font-size: 40px;
+	margin-left: 25%;
+}
+
+div.containerF{
+			width:25%;
+			height:200px;
+			margin-top:80px;
+			margin-left:100px;
+			position: absolute;
+		}
+
+		div.containerK{
+			width:25%;
+			height:200px;
+			margin-top:80px;
+			margin-left:400px;
+			position: absolute;
+		}
+
+		div.containerB{
+			width:25%;
+			height:200px;
+			margin-top:80px;
+			margin-left:700px;
+			position: absolute;
+		}
+
+		div.containerG{
+			width:25%;
+			height:200px;
+			margin-top:80px;
+			margin-left:1000px;
+			position: absolute;
+		}
+
+		.furniture{
+			width:250px;
+			height:200px;
+			border:3px solid white;
+			border-radius: 13%;
+		}
+
+		.kitchen{
+			width:250px;
+			height:200px;
+			border:3px solid white;
+			border-radius: 13%;
+		}
+
+
+		.bedroom{
+			width:250px;
+			height:200px;
+			border:3px solid white;
+			border-radius: 13%;
+		}
+
+
+		.garden{
+			width:250px;
+			height:200px;
+			border:3px solid white;
+			border-radius: 13%;
+		}
+
+
+		.furniture:hover{
+			width:270px;
+			height:220px;
+			transition: all .5s;
+			transform: scale3d(1.1,1.1,1);
+			overflow:hidden;
+		}
+
+		.kitchen:hover{
+			width:270px;
+			height:220px;
+			transition: all .5s;
+			transform: scale3d(1.1,1.1,1);
+			overflow:hidden;
+		}
+
+
+		.bedroom:hover{
+			width:270px;
+			height:220px;
+			transition: all .5s;
+			transform: scale3d(1.1,1.1,1);
+			overflow:hidden;
+		}
+
+
+		.garden:hover{
+			width:270px;
+			height:220px;
+			transition: all .5s;
+			transform: scale3d(1.1,1.1,1);
+			overflow:hidden;
+		}
+
+		p{
+			font-family: 'Petit Formal Script';
+			font-size: 2vw;
+			color: pink;
+			margin-left: 70px;
+		}
+
+		p.fur{
+			font-family: 'Petit Formal Script';
+			font-size: 2vw;
+			color: pink;
+			margin-left: 50px;
+		}
+		
+
+</style>
+<body>
+
+	<div class="header">
+		<span id="header">OrganiseForAll</span>
+
+
+	<span id="main"> Home Decor </span>
+			
+	<button name="back" class="buttonback" value="Back" onclick="location.href='Welcome.html';"> Back </button>
+	<button name="logout" class="logoutbutton" value="Logout" onclick="location.href='Main.html';"> Log Out </button>
+
+<br><br>
+	
+	</div>
+	<br><br><br>
+
+	<span class="intro"> Which field of household items would you like to select? </span> <br> <br>
+	
+	<div class="containerF">
+	<a href="furniture.html">
+	<img src="Furniture.jpg" class="furniture" title="Furniture">
+	<p class="fur"> Furniture </p>
+	</a>
+	</div>
+
+	<div class="containerK">
+	<a href="kitchen.html">
+	<img src="Kitchen.jpg" class="kitchen" title="Kitchen">	
+	<p> Kitchen</p>
+	</a>
+	</div>
+
+	<div class="containerB">
+	<a href="bedroom.html">
+	<img src="Bedroom.jpg" class="bedroom" title="Bedroom">
+	<p> Bedroom </p>
+	</a>
+	</div>
+
+	<div class="containerG">
+	<a href="garden.html">
+	<img src="Garden.jpg" class="garden" title="Garden">
+	<p> Garden </p>
+	</a>
+	</div>
+
+
+
+
+</body>
+</html>
+
