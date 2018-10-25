@@ -129,7 +129,7 @@ label{
 	<br>
 
 <div class="container">
-	<form name="form2" method="post">
+	<form name="form2" method="post" action="sign-up.php">
 		<label for="firstname"> First Name: </label> <br>
 			<input class="input" type="text" name="firstname" required autofocus="">
 			<br><span id="span3"></span> <br><br>
@@ -158,8 +158,8 @@ label{
 			<input class="input" type="password" name="conpassword" required> 
 			<br><span id="span9"></span> <br><br>
 		
-			<input class="buttonintropage" type="button" name="Sign Up" onclick="validate2()" value="Sign Up">
-		
+			<input class="buttonintropage" type="submit" name="Sign Up" onclick="validate2()" value="Sign Up">
+			<span id="span10"></span>
 		</form>
 </div>
 </body>

@@ -116,6 +116,13 @@ textarea{
 	padding:10px;
 
 }
+input{
+	font-size: 20px;
+	font-family: 'Times New Roman';
+	background-color:rgb(175,238,238,0.5);
+	border:2px solid white;
+	padding:10px;
+}
 
 span{
 	color:pink;
@@ -160,15 +167,17 @@ p{
 	<br>
 	<br>
 
-<p> Is there something you wish to ask us? You can view our contacts under the Complaint heading or you can post the question in the space given below. We will try to get back to you as soon as we can.
+<p> Is there something you wish to ask us? You can view our contacts under the Complaint heading or you can post the complaint in the space given below. We will try to get back to you as soon as we can.
+<br>
+<br>
+<form method="post" action="question.php">
+<input type="number" name="number" placeholder="Enter phone number"><br><br>
+<input type="text" name="address" placeholder="Enter address"><br><br>
+<textarea class="text" name="complaint" rows="20" cols="100" placeholder="Enter Complaint here."></textarea>
 <br>
 <br>
 
-<textarea class="text" rows="20" cols="138" placeholder="Enter Question here."></textarea>
-<br>
-<br>
 
-
-<button name="post" class="buttonpost" value="Post"> Post </button>
-
+<input type="submit" name="submit" value="Post">
+</form>
 

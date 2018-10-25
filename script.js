@@ -20,8 +20,8 @@ function validate1()
     {
         document.getElementById("span2").innerHTML="";
     }
-    if(true)
-        redirect();
+    /*if(true)
+        redirect();*/
 }
 function redirect()
 {

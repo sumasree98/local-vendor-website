@@ -1,4 +1,6 @@
-<html>
+<?php
+session_start();
+?><html>
     <head>
         <title>Cart</title>
         <style>
@@ -143,6 +145,29 @@
                 margin-top: 30px;
                 margin-left: 650px;
             }
+            table
+            {
+                width: 50%;
+                border: 2px solid white;
+                background: rgba(255,255,255, .20);
+                border-collapse: collapse;
+            }
+            tr, td
+            {
+                width: 50%;
+                height: 30px;
+                color: white;
+                border: 1px solid white;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+                font-size: 20px;
+                padding: 5px;
+            }
+            th
+            {
+                border: 1px solid white;
+                font-size: 25px;
+                padding: 5px;
+            }
 
         </style>
     </head>
@@ -154,7 +179,7 @@
             <button name="logout" class="logoutbutton" value="Logout" onclick="location.href='Main.html';"> Log Out </button>
             <br><br>
             <?php
-            session_start();
+            
                 $servername='localhost';
                 $username='root';
                 $password='';
@@ -168,28 +193,32 @@
                 $user=$_SESSION['id'];
                 $sql = "SELECT item,quantity FROM department where user='$user'";
                 $result = $conn->query($sql);
+                echo "<p>Departmental Store cart</p>";
                 echo "<center><table><tr><th>Item</th><th>Quantity</th></tr>";
                 if ($result->num_rows > 0) {
                     while($row = $result->fetch_assoc()) {
+                        
                         echo "<tr><td>" . $row["item"]. "</td><td> " . $row["quantity"]. " </td></tr><br>";
                         }
                         } 
                         else {
-                        echo "0 results";
+                        echo "<p>No items in departmental store cart</p>";
                         }
-                        echo"</center></table><br><br>"
-                $sql = "SELECT item,quantity FROM homedecor where user='$user'";
+                        echo"</center></table><br><br>";
+                $sql = "SELECT item FROM homedecor where user='$user'";
                 $result = $conn->query($sql);
+                echo "<p>Home Decor cart</p>";
                 echo "<center><table><tr><th>Item</th></tr>";
                         if ($result->num_rows > 0) {
                             while($row = $result->fetch_assoc()) {
+                                
                                 echo "<tr><td>" . $row["item"]. "</td></tr><br>";
                                 }
                                 } 
                                 else {
-                                echo "0 results";
+                                echo "<p>No items in homedecor cart.</p>";
                                 }
-                                echo"</center></table>"
+                                echo"</center></table>";
                 ?>
         </div>
     </body>
